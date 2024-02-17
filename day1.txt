@@ -1,0 +1,65 @@
+1.Write a blog on Difference between HTTP1.1 vs HTTP2
+
+HTTP/1.1: The Foundation of Modern Web Communication
+
+HTTP/1.1 has been the workhorse of the internet for over two decades. It laid the groundwork for modern web communication and enabled the exponential growth of the World Wide Web. However, as web technologies advanced and web pages became more complex, HTTP/1.1 began to show its limitations.
+
+Key Features of HTTP/1.1:
+1. Text-Based Protocol: HTTP/1.1 communicates through plaintext messages, which are human-readable but not necessarily optimized for machine processing.
+2. Connection Per Request: Each HTTP request requires its own connection, leading to latency and overhead, especially for websites with numerous resources.
+3. Header Redundancy: Headers are repeated for every request, resulting in unnecessary data transmission.
+4. Head-of-Line Blocking: Requests are processed sequentially, causing delays if one resource takes longer to load.
+
+HTTP/2: A Leap Forward in Web Performance
+
+Recognizing the shortcomings of HTTP/1.1, HTTP/2 was developed to address these issues and provide a more efficient protocol for modern web applications.
+
+Key Features of HTTP/2:
+1.Binary Protocol: HTTP/2 uses a binary framing layer, making it more efficient for parsing and reducing overhead.
+2.Multiplexing: Multiple requests can be sent and received on a single connection simultaneously, eliminating the need for multiple connections and reducing latency.
+3. Header Compression: Header data is compressed, significantly reducing redundancy and saving bandwidth.
+4. Server Push: Servers can proactively push resources to clients before they are requested, improving page load times by eliminating round trips.
+5. Stream Prioritization: Requests are assigned priority levels, allowing critical resources to be loaded first and improving overall page rendering speed.
+
+Performance Comparison:
+
+When comparing the performance of HTTP/1.1 and HTTP/2, the advantages of the latter are evident, particularly for modern web applications with a multitude of resources. HTTP/2's multiplexing and header compression significantly reduce latency and overhead, resulting in faster page load times and improved user experiences. Additionally, features like server push and stream prioritization further enhance performance, especially for content-rich websites.
+
+
+2.Write a blog about objects and its internal representation in Javascript
+
+JavaScript, as a versatile and widely-used programming language, employs various data structures to manage and manipulate data. Among these, objects stand out as a cornerstone, offering a flexible and powerful means of organizing and accessing data. In this blog post, we'll delve into the internal representation of objects in JavaScript, shedding light on how they are structured and accessed under the hood.
+
+ Anatomy of JavaScript Objects
+
+At its core, a JavaScript object is a collection of key-value pairs, where keys are strings (or symbols in ES6+) and values can be any data type, including other objects, functions, arrays, and primitive values. Objects in JavaScript are dynamic, meaning that properties can be added, modified, or removed at runtime.
+
+ Internal Representation
+
+Under the hood, JavaScript engines like V8 (used in Chrome) or SpiderMonkey (used in Firefox) store objects in memory using various data structures, such as hash tables or dictionaries. Let's explore some key concepts related to the internal representation of objects:
+
+ 1. Hash Tables:
+JavaScript engines often use hash tables to store object properties efficiently. Hash tables allow for constant-time (O(1)) access to properties by computing a hash of the property name, which serves as an index to quickly locate the property's value.
+
+ 2. Property Descriptors:
+Each property in a JavaScript object is associated with a property descriptor, which defines attributes such as writable, enumerable, and configurable. These descriptors control how properties can be accessed and modified. For example, some properties may be read-only or hidden from iteration.
+
+ 3. Hidden Classes (in Engines like V8):
+Modern JavaScript engines employ optimization techniques like hidden classes (also known as shapes or maps) to improve object access performance. Hidden classes are essentially blueprints that define the layout of objects, including property names and their offsets in memory. By using hidden classes, engines can optimize property access and reduce memory overhead.
+
+ Accessing Object Properties
+
+In JavaScript, object properties can be accessed using dot notation (object.property) or bracket notation (object['property']). While dot notation is more concise and readable, bracket notation allows for dynamic property access based on variable values.
+
+
+
+ Conclusion
+
+Understanding the internal representation of objects in JavaScript provides insights into how data is structured and accessed within the language. By grasping concepts like hash tables, property descriptors, and hidden classes, developers can write more efficient and optimized code. Moreover, mastering object manipulation techniques is essential for building robust and scalable JavaScript applications that leverage the full power of this dynamic and expressive language.
+
+
+3.codekata practice
+4.Read about IP address, port, HTTP methods, MAC address	
+
+
+https://github.com/reach2arunprakash/javascript-101/tree/master/ppt
